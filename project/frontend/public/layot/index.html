@@ -3,97 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href=assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href=../assets/images/favicon.ico" type="image/x-icon">
     <title>Beatriz Software Developer</title>
 
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Topo -->
+
     <header>
-        <div class="container">
-            <div class="logo" style="float: right;">
-                <img src="assets/images/logo2.png" alt="Logo">
-            </div>
-            <nav style="float: left;">
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo"><img src="../assets/images/logo.png" width="25px" alt="">Beatriz</div>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+            <button class="btn">Resume</button>
+        </nav>
     </header>
 
-    <!-- Body Principal -->
-    <main>
-        <!-- Seção 1 -->
-        <section id="secao1">
-            <div class="container">
-                <div class="text-left">
-                    <h1>BEATRIZ GDC</h1>
-                    <h2>Software Developer</h2>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção 2 - Sobre -->
-        <section id="sobre">
-            <div class="container">
-                <h2>Sobre</h2>
-                <p>Texto sobre o site ou a pessoa/empresa.</p>
-            </div>
-        </section>
-
-        <!-- Seção 3 - Projetos -->
-        <section id="projetos">
-            <div class="container">
-                <h2>Projetos</h2>
-                <div class="slick-container">
-                    <div class="slick-item">
-                        <a href="#projeto1">Projeto 1</a>
-                    </div>
-                    <div class="slick-item">
-                        <a href="#projeto2">Projeto 2</a>
-                    </div>
-                    <div class="slick-item">
-                        <a href="#projeto3">Projeto 3</a>
-                    </div>
-                    <!-- Adicione mais itens de projeto conforme necessário -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção 4 - Contato -->
-        <section id="contato">
-            <div class="container">
-                <h2>Contato</h2>
-                <p>Email: exemplo@email.com</p>
-                <p>Telefone: (00) 0000-0000</p>
-                <form action="#" method="post">
-                    <label for="email">Seu Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <p>Site feito por [Seu Nome] em 2024.</p>
+    <section class="intro">
+        <h1>Olá, Mundo! Eu sou <span>Beatriz Garcia</span></h1>
+        <h2>Desenvolvedora Backend (Node.js)</h2>
+        <p>Sou Desenvolvedora Backend e estou cursando Sistemas para Internet (IFC) e sou formada em Técnico em Desenvolvimento de Sistemas. Atualmente voluntária em um projeto (Pipoca Ágil) e Bolsista em Projeto de Iniciação Cinetifíca - Cyber Seguurança - IFC.</p>
+        <div class="social-icons">
+            <a href="#"><img src="../assets/images/ico-linkd.svg" alt=""></a>
+            <a href="#"><img src="../assets/images/ico-gith.svg" alt=""></a>
+            <a href="#"><img src="../assets/images/ico-sap.svg" alt=""></a>
         </div>
-    </footer>
+    </section>
 
-    <script src="slick.min.js"></script> <!-- Adicione o script do slick.js para o carrossel de projetos -->
-    <script>
-        // Configuração do slick (caso necessário)
-        $(document).ready(function(){
-            $('.slick-container').slick({
-                // opções de configuração do slick
-            });
-        });
-    </script>
+    <section class="skills">
+        <h2>Hard Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">MongoDB</div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <h2>Experiência</h2>
+        <div class="experience-card">
+            <button class="accordion">Lead Frontend Engineer at Google</button>
+            <div class="panel">
+                <p>June 2021 - Present</p>
+                <p>Worked on several projects to improve the UI and UX of Google applications.</p>
+            </div>
+        </div>
+        <div class="experience-card">
+            <button class="accordion">Software Engineer at YouTube</button>
+            <div class="panel">
+                <p>June 2020 - May 2021</p>
+                <p>Implemented front-end features for better user experience on YouTube.</p>
+            </div>
+        </div>
+        <div class="experience-card">
+            <button class="accordion">Junior Developer at Apple</button>
+            <div class="panel">
+                <p>Jan 2019 - June 2020</p>
+                <p>Contributed to the development of Apple services and front-end features.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, felis non efficitur gravida, dui orci tincidunt lectus, non faucibus arcu dui vitae felis.</p>
+    </section>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <img src="crypto.jpg" alt="Crypto Screener">
+            <h3>Crypto Screener Application</h3>
+            <p>A cryptocurrency tracking app with real-time data and visualizations.</p>
+        </div>
+        <div class="project-card">
+            <img src="ecommerce.jpg" alt="Ecommerce App">
+            <h3>Ecommerce App</h3>
+            <p>An e-commerce platform for apparel with modern UI/UX and payment integration.</p>
+        </div>
+        <div class="project-card">
+            <img src="blog.jpg" alt="Blog Template">
+            <h3>Blog Website Template</h3>
+            <p>A clean and responsive blog website template for personal blogs or portfolios.</p>
+        </div>
+    </section>
+
+    <footer>
+        <script type="text/javascript" src="../js/script.js"></script>
+
+        <p>&copy; 2024 Evren Shah - All Rights Reserved</p>
+    </footer>
 </body>
 </html>
