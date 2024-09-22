@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=assets/images/favicon.ico" type="image/x-icon">
+    <title>Beatriz Software Developer</title>
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <!-- Topo -->
+    <header>
+        <div class="container">
+            <div class="logo" style="float: right;">
+                <img src="assets/images/logo2.png" alt="Logo">
+            </div>
+            <nav style="float: left;">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Body Principal -->
+    <main>
+        <!-- Seção 1 -->
+        <section id="secao1">
+            <div class="container">
+                <div class="text-left">
+                    <h1>BEATRIZ GDC</h1>
+                    <h2>Software Developer</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2 - Sobre -->
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre</h2>
+                <p>Texto sobre o site ou a pessoa/empresa.</p>
+            </div>
+        </section>
+
+        <!-- Seção 3 - Projetos -->
+        <section id="projetos">
+            <div class="container">
+                <h2>Projetos</h2>
+                <div class="slick-container">
+                    <div class="slick-item">
+                        <a href="#projeto1">Projeto 1</a>
+                    </div>
+                    <div class="slick-item">
+                        <a href="#projeto2">Projeto 2</a>
+                    </div>
+                    <div class="slick-item">
+                        <a href="#projeto3">Projeto 3</a>
+                    </div>
+                    <!-- Adicione mais itens de projeto conforme necessário -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4 - Contato -->
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Email: exemplo@email.com</p>
+                <p>Telefone: (00) 0000-0000</p>
+                <form action="#" method="post">
+                    <label for="email">Seu Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Site feito por [Seu Nome] em 2024.</p>
+        </div>
+    </footer>
+
+    <script src="slick.min.js"></script> <!-- Adicione o script do slick.js para o carrossel de projetos -->
+    <script>
+        // Configuração do slick (caso necessário)
+        $(document).ready(function(){
+            $('.slick-container').slick({
+                // opções de configuração do slick
+            });
+        });
+    </script>
+</body>
+</html>
